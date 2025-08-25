@@ -79,4 +79,6 @@ typeWriter();
                 }
             }
             typing();
+
         }
+function playMusic() { const music = document.getElementById("bgMusic"); music.volume = 0.5; music.play().catch(()=>{}); } function toggleMute() { const music = document.getElementById("bgMusic"); const btn = document.getElementById("muteBtn"); music.muted = !music.muted; btn.textContent = music.muted ? "Unmute" : "Mute"; }
